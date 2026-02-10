@@ -97,7 +97,14 @@ Create a test file:
 ```bash
 touch /tmp/malware
 ```
-
+restart the agent 
+```
+systemctl restart wazuh-agent
+```
+testing FIM
+```
+"hello" >> /tmp/malware/hello.txt
+```
 ## View alerts in Dashboard:
 <img width="1920" height="991" alt="Ubuntu (Snapshot 1)  Running  - Oracle VirtualBox 09_02_2026 07_10_06" src="https://github.com/user-attachments/assets/11bca500-76c5-43d1-b035-9a7b0a7c8f33" />
 
